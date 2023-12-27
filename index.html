@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <Link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fylo landing page with two column layout</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(227, 76%, 95%);
+      }
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+    </style>
+  </head>
+  <body class="justify-center mt-10">
+    <div class="relative container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <img src="images/logo.svg" class="w-24 md:w-40">
+        </div>
+        <div>
+          <ul class="flex gap-3 md:gap-16">
+            <li class="tracking-wider">
+              <a href="#">Features</a>
+            </li>
+            <li class="tracking-wider">
+              <a href="#">Team</a>
+            </li>
+            <li class="tracking-wider">
+              <a href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="relative pb-24 md:pb-36 lg:pb-52">
+      <div class=" container mx-auto px-4 mt-20 xl:my-28">
+        <div class="grid lg:grid-cols-2 justify-between items-center">
+          <div class="max-lg:order-2 max-sm:text-center">
+            <h1 class="text-primary text-4xl md:text-5xl font-semibold leading-[3rem] md:leading-[4.5rem] mb-3"> All your files in one secure location, accessible anywhere. </h1>
+            <p class="text-lg tracking-wider font-normal mb-6"> Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers. </p>
+            <div>
+              <form class="group" novalidate>
+                <div class="grid md:grid md:grid-cols-12 gap-4">
+                  <div class="col-span-12 md:col-span-6">
+                    <label for="email">
+                      <input type="email" class="peer block w-full rounded-sm h-12 placeholder-neutral-foreground/50 placeholder:text-sm placeholder:tracking-wider focus:outline-none focus:ring-1 focus:ring-primary-foreground focus:border-transparent
+                  invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email..." required />
+                      <span class="mt-2 hidden text-xs tracking-wider text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"> Please check your email </span>
+                    </label>
+                  </div>
+                  <div class="col-span-12 md:col-span-4">
+                    <button type="submit" class="bg-accent cursor-pointer group-invalid:pointer-events-none text-neutral text-sm font-medium rounded-sm w-full h-12 shadow-lg"> Get Started </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="max-lg:order-1 max-lg:mb-12 flex justify-center">
+            <img src="images/illustration-1.svg" class="pointer-events-none xl:max-w-xl">
+          </div>
+        </div>
+      </div>
+      <img alt="shape" class="absolute bottom-0 left-0  w-full z-0 hidden md:block" style="color:transparent" src="images/bg-curve-desktop.svg">
+      <img alt="shape" class="absolute bottom-0 left-0  w-full z-0 block md:hidden" style="color:transparent" src="images/bg-curve-mobile.svg">
+    </div>
+    <div class="relative bg-neutral">
+      <div class="container mx-auto px-4 pb-24">
+        <div class="md:grid lg:grid-cols-2 justify-between items-center">
+          <div class="md:hidden lg:flex md:order-2 max-lg:mb-12 justify-center">
+            <img src="images/illustration-2.svg" class="pointer-events-none xl:max-w-xl">
+          </div>
+          <div class="md:order-1">
+            <h1 class="text-primary text-4xl md:text-[2.5rem] font-semibold leading-[3rem] md:leading-[4.5rem] mb-8 max-sm:text-center"> Stay productive, wherever you are </h1>
+            <p class="text-lg tracking-wider font-normal mb-6"> Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs. </p>
+            <p class="text-lg tracking-wider font-normal mb-6"> Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required! </p>
+            <div class="group max-sm:text-center">
+              <a href="#" class="relative text-accent-foreground group-hover:opacity-70 transition delay-150 text-lg font-sans font-light before-content[''] before:w-full before:h-[1px] before:bg-accent-foreground before:absolute before:-bottom-1
+            after:content[''] after:bg-[url(/images/icon-arrow.svg)] after:w-8 after:h-8 after:bg-no-repeat after:absolute after:top-1/4 after:-translate-y-[2px] after:translate-x-1"> See how Fylo works </a>
+            </div>
+            <div class="mt-14">
+              <div class="swiper-container overflow-hidden max-w-sm" id="mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="bg-white rounded-md shadow-md p-10 grid gap-4 max-w-sm">
+                      <img src="images/icon-quotes.svg">
+                      <p class="text-sm leading-6 tracking-wider"> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. </p>
+                      <div class="flex gap-2">
+                        <img src="images/avatar-testimonial.jpg" class="rounded-full w-7 h-7">
+                        <div>
+                          <h6 class="text-xs font-bold font-raleway"> Kyle Burton </h6>
+                          <p class="text-[10px]"> Founder & CEO, Huddle</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg-white rounded-md shadow-md p-10 grid gap-4 max-w-sm">
+                      <img src="images/icon-quotes.svg">
+                      <p class="text-sm leading-6 tracking-wider"> 2Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. </p>
+                      <div class="flex gap-2">
+                        <img src="images/avatar-testimonial.jpg" class="rounded-full w-7 h-7">
+                        <div>
+                          <h6 class="text-xs font-bold font-raleway"> Kyle Burton </h6>
+                          <p class="text-[10px]"> Founder & CEO, Huddle</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="bg-white rounded-md shadow-md p-10 grid gap-4 max-w-sm">
+                      <img src="images/icon-quotes.svg">
+                      <p class="text-sm leading-6 tracking-wider"> 3Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine. </p>
+                      <div class="flex gap-2">
+                        <img src="images/avatar-testimonial.jpg" class="rounded-full w-7 h-7">
+                        <div>
+                          <h6 class="text-xs font-bold font-raleway"> Kyle Burton </h6>
+                          <p class="text-[10px]"> Founder & CEO, Huddle</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-primary-foreground">
+      <div class="container mx-auto px-4 py-28">
+        <div class="md:grid lg:grid-cols-2 xl:gap-60 justify-between items-center">
+          <div class="">
+            <h1 class="text-neutral text-3xl font-semibold mb-5 max-sm:text-center"> Get early access today </h1>
+            <p class="text-lg tracking-wider font-light text-neutral max-lg:mb-7"> It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you. </p>
+          </div>
+          <div>
+            <form class="group" novalidate>
+              <div class="grid gap-4">
+                <div class="">
+                  <label for="email">
+                    <input type="email" class="peer block w-full md:w-[80%] rounded-sm h-12 placeholder-neutral-foreground/50 placeholder:text-sm placeholder:tracking-wider focus:outline-none focus:ring-1 focus:ring-primary-foreground focus:border-transparent
+                invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@example.com" required />
+                    <span class="mt-2 hidden text-xs text-neutral tracking-wider peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"> Please check your email </span>
+                  </label>
+                </div>
+                <div class="">
+                  <button type="submit" class="bg-accent cursor-pointer group-invalid:pointer-events-none text-neutral text-sm font-medium rounded-sm max-md:w-full w-1/3 h-12 shadow-lg"> Get Started for free </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class=" bg-primary">
+      <div class="container mx-auto px-4 py-20">
+        <div class="mb-10">
+          <img src="images/logo.svg" class="w-24 md:w-44">
+        </div>
+        <div class="max-md:grid gap-10 md:flex md:gap-10">
+          <div class="flex-none ...">
+            <div class="grid gap-8">
+              <div class="grid gap-3">
+                <a href="#" class="text-neutral text-base font-light tracking-wider flex items-center gap-5 hover:text-accent/70 transition delay-150 duration-150">
+                  <span>
+                    <img src="images/icon-phone.svg">
+                  </span>
+                  <span> Phone: +1-543-123-4567</span>
+                </a>
+                <a href="#" class="text-neutral text-base font-light tracking-wider flex items-center gap-5 hover:text-accent/70 transition delay-150 duration-150">
+                  <span>
+                    <img src="images/icon-email.svg">
+                  </span>
+                  <span> example@fylo.com</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex flex-1 justify-center w-32 ...">
+            <div class="grid gap-3">
+              <a href="#" class="text-neutral text-base font-light tracking-wider hover:text-accent/70 transition delay-150 duration-150"> About Us </a>
+              <a href="#" class="text-neutral text-base font-light tracking-wider hover:text-accent/70 transition delay-150 duration-150"> Jobs </a>
+              <a href="#" class="text-neutral text-base font-light tracking-wider hover:text-accent/70 transition delay-150 duration-150"> Press </a>
+              <a href="#" class="text-neutral text-base font-light tracking-wider hover:text-accent/70 transition delay-150 duration-150"> Blogs </a>
+            </div>
+          </div>
+          <div class="md:flex flex-1 justify-center w-32 h-fit">
+            <div class="grid gap-3">
+              <a href="#" class="text-neutral text-base font-light tracking-wider hover:text-accent/70 transition delay-150 duration-150"> Contact Us </a>
+              <a href="#" class="text-neutral text-base font-light tracking-wider hover:text-accent/70 transition delay-150 duration-150"> Terms </a>
+              <a href="#" class="text-neutral text-base font-light tracking-wider hover:text-accent/70 transition delay-150 duration-150"> Privacy </a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-center md:w-32 ...">
+            <div class="flex gap-3">
+              <a href="#" class="group border rounded-full flex justify-center items-center w-8 h-8 hover:border-accent/70 transition delay-150 duration-150">
+                <i class="fa fa-facebook text-neutral group-hover:text-accent/70 transition delay-150 duration-150"></i>
+              </a>
+              <a href="#" class="group border rounded-full flex justify-center items-center w-8 h-8 hover:border-accent/70 transition delay-150 duration-150">
+                <i class="fa fa-twitter text-neutral group-hover:text-accent/70 transition delay-150 duration-150"></i>
+              </a>
+              <a href="#" class="group border rounded-full flex justify-center items-center w-8 h-8 hover:border-accent/70 transition delay-150 duration-150">
+                <i class="fa fa-instagram text-neutral group-hover:text-accent/70 transition delay-150 duration-150"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <p class="attribution text-white"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>. </p>
+    </footer>
+  </body>
+  <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mySwiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        // autoplay: {
+        //   delay: 1700,
+        //   disableOnInteraction: false,
+        // },
+      });
+      // const swiperContainer = document.getElementById('mySwiper');
+      // swiperContainer.addEventListener('mouseenter', function () {
+      //   mySwiper.autoplay.stop();
+      // });
+      // swiperContainer.addEventListener('mouseleave', function () {
+      //   mySwiper.autoplay.start();
+      // });
+    });
+  </script>
+</html>
